@@ -5,86 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maksim CV</title>
+    <link rel="stylesheet" href="/home/max/Desktop/Portfolio/styles for portfolio.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="https://sun9-5.userapi.com/impf/c845020/v845020782/a5855/_-7QWsEQyF8.jpg?size=2560x1709&quality=96&sign=abafe7e4469c695a5e8a8cd2bb088733&type=album" width="200" alt="Portret">
-            </td>
-            <td>
-                <h1>Максим Антонов</h1>
-                <p><em>Researcher в компании <strong> Rocketech</strong></em></p>
-                <p>Я люблю баскетбол, тренажерку и кодинг</p>
-            </td>
-        </tr>
-    </table>
+    <div class="container"></div>
+    <div class="info">
+        <img src="https://sun9-5.userapi.com/impf/c845020/v845020782/a5855/_-7QWsEQyF8.jpg?size=2560x1709&quality=96&sign=abafe7e4469c695a5e8a8cd2bb088733&type=album" alt="Portret" class="avatar" />
+        
+        <div class="info-text">
+            <h1>Максим Антонов</h1>
+            <p>Researcher в компании <strong> Rocketech</strong></p>
+            <p>Я люблю баскетбол, тренажерку и кодинг</p>
 
-    <hr>
+            <h4>Мои социальные сети</h4>
+            <a href="https://vk.com/boorshez/" target="blank">Вконтакте</a> |
+            <a href="https://t.me/Booorshez" target="blank">Telegram</a>
+        </div>   
+   
+    </div>    
 
-    <h2>Контакты для связи</h2>
-    <ul>
-        <li><a href="https://vk.com/boorshez/" target="blank">Вконтакте</a></li>
-        <li><a href="https://t.me/Booorshez" target="blank">Telegram</a></li>
-    </ul>
+    <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+            <li>Баскетбол</li>
+            <li>Тренаженрный зал</li>
+            <li>Кодинг</li>
+        </ol>
+    </div>
 
-    <hr>
+    
+    <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+            <tr>
+                <th>Компания</th>
+                <th>Должность</th>
+                <th>Период работы</th>
+            </tr>
+            <tr>
+                <td>Rocketech</td>
+                <td>Researcher</td>
+                <td>10.2021 - present</td>
+            </tr>
+            <tr>
+                <td>Вооруженные силы Российской Федерации</td>
+                <td>Начальник Метеорологической станции метеорологической группы</td>
+                <td>09.2019 - 09.2021</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="card bg-red">
+        <h2>Сертификаты</h2>
+        <ul class="link-list">
+            <li>
+                <a href="https://drive.google.com/file/d/1DQYBFFLWpKYxTxtnzpDU-EuuXS0YfPcV/view?usp=sharing" target="blank">Сертификат о прохождении онлайн-марафона по HTML+CSS</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="contact">
+        <h2>Связаться со мной</h2>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Баскетбол</li>
-        <li>Тренаженрный зал</li>
-        <li>Кодинг</li>
-    </ol>
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя...">
+                </div>
 
-    <hr>
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" placeholder="Введите email...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="text">Ваше сообщение:</label>
+                <br>
+                <textarea id="text" cols="15" rows="2"></textarea>
+            </div>
+            
 
-    <h2>Опыт работы</h2>
-    <table border="2">
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Период работы</th>
-        </tr>
-        <tr>
-            <td>Rocketech</td>
-            <td>Researcher</td>
-            <td>2021 - present</td>
-        </tr>
-        <tr>
-            <td>Вооруженные силы Российской Федерации</td>
-            <td>Начальник Метеорологической станции метеорологической группы</td>
-            <td>09.2019 - 09.2021</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Сертификаты</h2>
-    <a href="certificate.html">Посмотреть сертификаты</a>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-
-        <br>
-
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
-
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" cols="15" rows="2"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться!">
-    </form>
+            <input class="btn" type="submit" value="Связаться!">
+        </form>
+    </div>
+    </div>
 </body>
 </html>
